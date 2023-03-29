@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+#conhecimentos {
+    background: linear-gradient(0, #120c56, #000000);
+}
+
+.conhecimentos-a {
+    padding-top: 93px;
+}
+
+.conhecimentos-a h2 { 
+    text-align: center;
+    padding-bottom: 70px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.conhecimentos-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap:50px;
+    padding-bottom: 70px;
+}
+
+.conhecimentos-caixa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 55%;
+}
+
+.knowledge {
+    height: 110px;
+    width: 110px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.7s;
+}
+
+.knowledge:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.nameDescription {
+    color:rgb(226, 202, 172);
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    max-width: 40%;
+    font-weight: bold;
+}
+
+/* Responsivo */
+
+@media (max-width:1200px) {
+    .nameDescription {
+        height: 40px;
+    }
+    #conhecimentos {
+        display: flex;
+        justify-content: center;
+    }
+    .conhecimentos-description {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        gap:50px;
+        padding-bottom: 70px;
+        align-items: center;
+    }
+    .conhecimentos-description p {
+        text-align: center;
+    }
+}
+
+@media (max-width:950px) {
+    .conhecimentos-caixa {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 37px;
+        max-width: 300px;
+    }
+    .nameDescription {
+        max-width: 300px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,176 @@
+/* Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #a7a4a3;
+}
+
+li{
+    list-style: none;
+}
+
+#meuMenu{
+    position: fixed !important;
+    backdrop-filter: blur(10px);
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px;
+    background-color: #746d6b8c;
+    border-bottom: 1px solid #cfcfcfd2;
+}
+
+.logo{
+    display: flex;
+    margin-top: 1px;
+    align-items: center;
+    width: 70px;
+    height: auto;
+}
+
+.btn-1{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    font-size: 22px;
+}
+
+.btn{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.btn:hover{
+    color: rgb(25, 182, 255);
+    transition: all 1s;
+}
+
+.mid{
+    display: flex;
+    max-width: 100%;
+    margin-top: 12rem;
+    justify-content: center;
+    gap: 20rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trevor{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+@keyframes desenhoAnimacao {
+    from {
+        top: -25px;
+    }
+    to {
+        top: 10px;
+    }
+}
+
+.trevor {
+    position:relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+}
+
+.left{
+    max-width: 100%;
+    line-height: 55px;
+}
+
+.mid h2{
+    font-size: 50px;
+    color: rgb(14, 13, 13);
+}
+
+.mid h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fffdfc;
+}
+
+@keyframes piscar {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.piscar {
+    color:#ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px; 
+    -webkit-animation: piscar .9s linear infinite;
+    -moz-animation: piscar .9s linear infinite;
+    -ms-animation: piscar .9s linear infinite;
+    -o-animation: piscar .9s linear infinite;
+    animation: piscar .9s linear infinite;
+ }
+
+.icon{
+    list-style: none;
+    display: flex;
+    width: 70px;
+    height: auto;
+    margin-top: 20px;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+/* Responsivo */
+
+@media (max-width:1200px) {
+    .container-header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #meuMenu {
+        display: flex;
+        justify-content: center;
+    }
+    .icon {
+        flex-direction: row;
+    }
+    .btn-1{
+        gap: 2rem;
+        font-size: 13px;
+    }
+    .logo{
+        width: 40px;
+        height: auto;
+        padding-bottom: 4px;
+    }
+    .mid h2{
+        font-size: 44px;
+    }
+    .mid h1{
+        font-size: 50px;
+    }
+  }
+  
+  @media (max-width:950px) {
+      .icon {
+          max-width: 300px;
+      }
+    }

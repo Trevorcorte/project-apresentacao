@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+#projects {
+    background-color: #141144;
+}
+
+.sub {
+    padding-top: 93px;
+}
+
+.sub h2, .sub a {
+    text-align: center;
+}
+
+.sub h2 {
+    padding-bottom: 75px;
+    font-weight: bold;
+}
+
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.github {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    font-family: 'Teko', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.github a{
+    font-family: 'Teko', sans-serif;
+}
+
+.sub a {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+.sub a:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s;
+}
+
+.textt {
+    background-color: #080247;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in 0.3s;
+}
+
+
+.textt div p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+}
+
+.textt:hover {
+    letter-spacing: 2px;
+}
+
+.textt div {
+    background-color: #4840a1;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-60deg);
+}
+
+
+.itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Responsivo */
+
+@media (max-width:1200px) {
+  .sub{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+  #projects {
+      display: flex;
+      justify-content: center;
+  }
+  .itens {
+      flex-direction: column;
+  }
+}
+
+@media (max-width:950px) {
+    .textt {
+        max-width: 300px;
+    }
+
+}
+    
